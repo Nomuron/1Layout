@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+}
+
+.navContainer {
+    margin-left: 0%;
+    padding-left: 0%;
+}
+
+.navbar {
+    height: 56px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+}
+
+#logo {
+    margin-left: 20.5%;
+}
+
+#allMenu {
+    margin-left: 33%;
+}
+
+.menuElements {
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+#hireUs {
+    background-image: url(img/header-bg.jpg);
+    height: 1030px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(60%);
+}
+
+#hireUsText {
+    font-size: 480%;
+    color: white;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 51%;
+    filter: default;
+}
+
+.hireSpan {
+    font-weight: bold;
+}
+
+#hireUsButton {
+    position: absolute;
+    margin-top: 660px;
+    margin-left: 51%;
+    background: linear-gradient(to right, #908CED, #B272E8);
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 8px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+
+}
+
+#hireUsButton:hover {
+    position: absolute;
+    margin-top: 660px;
+    margin-left: 51%;
+    background: transparent;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 8px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+#categories {
+    height: 170px;
+}
+.categoriesContainer {
+    margin-top: 55px;
+}
+
+#firstCategory {
+    text-align: center;
+    font-size: 240%;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+#secondCategory {
+    text-align: center;
+    box-sizing: border-box;
+    opacity: 0.5;
+}
+
+.lnr {
+    font-size: 35px;
+    opacity: 0.7;
+    padding-bottom: 100px;
+}
+
+.serviceContainer {
+    margin-top: 50px;
+    margin-bottom: 210px;
+}
+
+.serviceTitle {
+    font-weight: bold;
+    font-size: 19px;
+    padding-top: 40px;
+}
+
+.serviceButton {
+    background: transparent;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    padding: 8px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, .1);
+    
+}
+
+.serviceButton:hover {
+    background: linear-gradient(to right, #908CED, #B272E8);
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 8px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.services {
+    width: 150px;
+}
+
+.servicesText {
+    opacity: .5;
+    padding-top: 15px;
+}
+
+#servicesFirst:hover .lnr-rocket {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #908CED, #B272E8);
+}
+
+#servicesSecond:hover .lnr-magic-wand {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #908CED, #B272E8);
+}
+
+#servicesThird:hover .lnr-gift {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #908CED, #B272E8);
+}
+
+#servicesForth:hover .lnr-phone {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #908CED, #B272E8);
+}
+
+#solution {
+    background-image: linear-gradient(to right, #908CED, #B272E8);
+    height: 510px;
+    width: 100%;
+    z-index: 999;
+}
+
+#solutionTitle {
+    color: white;
+    margin-top: 130px;
+}
+
+#solutionText {
+    color: white;
+}
+
+.solutionButton {
+    background: transparent;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    padding: 4px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.solutionButton:hover {
+    background: #ffffff;
+    border-radius: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: 15px;
+    padding: 4px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.girlPicture {
+    float: right;
+    position: relative;
+    bottom: 73px;
+}
+
+.projectContainer {
+    height: 1085px;
+}
+
+.projectTitle {
+    margin-top: 110px;
+    text-align: center;
+}
+
+.projectImage {
+    margin-top: 80px;
+    height: 100%;
+    width: 100%;
+}
+
+.projectText {
+    opacity: .6;
+    text-align: center;
+}
+
+.projectTitle2 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.field {
+    background-color: black;
+    height: 428px;
+}
+
+.fieldTitle {
+    color: white;
+    margin-top: 135px;
+}
+
+.fieldText {
+    text-align: left;
+    margin-top: 35px;
+    color: white;
+    opacity: .3;
+}
+
+.donut {
+    border: 10px solid;
+    border-image: url(img/about-bg.png) 30 stretch;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    text-align: center;
+    margin-top: 125px;
+    padding-top: 45px;
+    color: white;
+    font-size: 20px;
+}
+
+.donutText {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    margin-right: 15px;
+}
+
+#team {
+    height: 800px;
+    background-color: #f9f9ff;
+}
+
+#teamTitle {
+    text-align: center;
+    margin-top: 120px;
+}
+
+#teamText {
+    text-align: center;
+    opacity: .5;
+    margin-bottom: 100px;
+}
+
+#teamImages {
+    padding-top: 60px;
+}
+
+.teamImage {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.teamNames {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.teamPositions {
+    text-align: center;
+    opacity: .6;
+}
+
+#opinions {
+    background-image: url(img/testimonial-bg.jpg);
+    background-position: center;
+    height: 430px;
+}
+
+.opinionsImage {
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+}
+
+.singleOpinion {
+    background-color: white;
+    text-align: center;
+}
