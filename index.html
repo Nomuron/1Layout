@@ -5,9 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css"></link>
         <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
         <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/hover-min.css">
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <script src="https://use.fontawesome.com/543d9489c8.js"></script>
         
     </head>
     <body>
@@ -104,8 +106,11 @@
                     <div class="col-6">
                         <h1 id="solutionTitle">We can be your digital Problems Solution Partner</h1>
                         <p id="solutionText">inappropriate behavior is often laughed off as “boys will be 
+                                <br>
                                 boys,” women face higher conduct standards especially 
-                                in the workplace. That’s why it’s crucial that, as women, our 
+                                <br>
+                                in the workplace. That’s why it’s crucial that, as women, our
+                                <br> 
                                 behavior on the job is beyond reproach.
                         </p>
                         <button class="solutionButton" id="solutionButtonLeft">WHAT WE OFFER</button>
@@ -151,7 +156,11 @@
                         </p>
                     </div>
                     <div class="col-2">
-                        <div class="donut" id="firstDonut">75%</div>
+                        <div id="donutsBackground">
+                            <div class="donut1" id="firstDonut">
+                                75%
+                            </div>
+                        </div>
                     </div>
                     <div class="col-2">
                         <div class="donut" id="secondDonut">95%</div>
@@ -178,45 +187,135 @@
                         <h1 id="teamTitle">About Creative Agency Team</h1>
                         <p id="teamText">Who are in extremely love with eco friendly system.</p>
                     </div>
-                    <div class="col-12 teamImages">
-                        <img class="teamImage" src="img/t1.jpg">
-                        <img class="teamImage" src="img/t2.jpg">
-                        <img class="teamImage" src="img/t3.jpg">
-                        <img class="teamImage" src="img/t4.jpg">
-                    </div>
-                    <!-- <div class="col-3 teamImageIcons">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                    </div> -->
-                    <div class="col-3">
+                    <div class="col-3 teamImageIcons">
+                        <div class="members" id="firstMember">
+                            <i class="fa fa-facebook-f memberIcons"></i>
+                            <i class="fa fa-twitter memberIcons"></i>
+                            <i class="fa fa-linkedin-in memberIcons"></i>
+                        </div>
                         <h5 class="teamNames">Ethel Davis</h5>
                         <p class="teamPositions">Managing Director (Sales)</p>
                     </div>
                     <div class="col-3">
+                        <div class="members" id="secondMember">
+                            <i class="fa fa-facebook-f memberIcons"></i>
+                            <i class="fa fa-twitter memberIcons"></i>
+                            <i class="fa fa-linkedin-in memberIcons"></i>
+                        </div>
                         <h5 class="teamNames">Rodney Cooper</h5>
                         <p class="teamPositions">Creative Art Director (Project)</p>
                     </div>
                     <div class="col-3">
+                        <div class="members" id="thirdMember">
+                            <i class="fa fa-facebook-f memberIcons"></i>
+                            <i class="fa fa-twitter memberIcons"></i>
+                            <i class="fa fa-linkedin-in memberIcons"></i>
+                        </div>
                         <h5 class="teamNames">Dora Walker</h5>
                         <p class="teamPositions">Senior Core Developer</p>
                     </div>
                     <div class="col-3">
+                        <div class="members" id="forthMember">
+                            <i class="fa fa-facebook-f memberIcons"></i>
+                            <i class="fa fa-twitter memberIcons"></i>
+                            <i class="fa fa-linkedin-in memberIcons"></i>
+                        </div>
                         <h5 class="teamNames">Lena Keller</h5>
-                        <p class="teamPositions">Creative Content Developer</p>
+                        <p class="teamPositions">Creative Content Developer</p>  
                     </div>
                 </div>
             </div>
         </section>
         <section id="opinions">
             <div class="container">
-                <img class="opinionsImage" src="img/about-bg.png">
                 <div class="row">
                     <div class="col-6 singleOpinion">
                         <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
                     </div>
                     <div class="col-6 singleOpinion">
                         <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 id="blogTitle">Latest From Our Blog</h1>
+                        <p id="blogText">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                            <br>
+                            dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="row blogRow2">
+                    <div class="col-3 blogPosts">
+                        <img src="img/b1.jpg" class="hvr-shrink blogImages">
+                        <span class="blogDates">10 Jan 2018</span>
+                        <a href="#" class="blogLink"><h5 class="blogTitle2">Addiction When Gambling Becomes A Problem</h5></a>
+                        <p class="blogText2">inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+                        <span id="blogIconLeft" class="lnr lnr-heart blogIcons"> 15 Likes</span>
+                        <span id="blogIconRight" class="lnr lnr-bubble blogIcons"> 02 Comments</span>
+                    </div>
+                    <div class="col-3 blogPosts">
+                        <img src="img/b2.jpg" class="hvr-shrink blogImages">
+                        <span class="blogDates">10 Jan 2018</span>
+                        <a href="#" class="blogLink"><h5 class="blogTitle2">Addiction When Gambling Becomes A Problem</h5></a>
+                        <p class="blogText2">inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+                        <span id="blogIconLeft" class="lnr lnr-heart blogIcons"> 15 Likes</span>
+                        <span id="blogIconRight" class="lnr lnr-bubble blogIcons"> 02 Comments</span>
+                    </div>
+                    <div class="col-3 blogPosts">
+                        <img src="img/b3.jpg" class="hvr-shrink blogImages">
+                        <span class="blogDates">10 Jan 2018</span>
+                        <a href="#" class="blogLink"><h5 class="blogTitle2">Addiction When Gambling Becomes A Problem</h5></a>
+                        <p class="blogText2">inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+                        <span id="blogIconLeft" class="lnr lnr-heart blogIcons"> 15 Likes</span>
+                        <span id="blogIconRight" class="lnr lnr-bubble blogIcons"> 02 Comments</span>
+                    </div>
+                    <div class="col-3 blogPosts">
+                        <img src="img/b4.jpg" class="hvr-shrink blogImages">
+                        <span class="blogDates">10 Jan 2018</span>
+                        <a href="#" class="blogLink"><h5 class="blogTitle2">Addiction When Gambling Becomes A Problem</h5></a>
+                        <p class="blogText2">inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+                        <span id="blogIconLeft" class="lnr lnr-heart blogIcons"> 15 Likes</span>
+                        <span id="blogIconRight" class="lnr lnr-bubble blogIcons"> 02 Comments</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+
+                    </div>
+                    <div class="col-6">
+                        <h5 id="newsletter">Newsletter</h5>
+                        <p id="newsletterText">You can trust us. we only send promo offers, not a single spam.</p>
+                        <input>
+                        <button id="newsletterButton" class="hvr-icon-forward">SUBSCRIBE<span class="lnr lnr-arrow-right hvr-icon" id="newsletterArrow"></span></button>
+                    </div>
+                    <div class="col-3" id="instagram">
+                        <h5 id="instagramTitle">Instragram Feed</h5>
+                        <img src="img/i1.jpg" class="instagramImages">
+                        <img src="img/i2.jpg" class="instagramImages">
+                        <img src="img/i3.jpg" class="instagramImages">
+                        <img src="img/i4.jpg" class="instagramImages">
+                        <img src="img/i5.jpg" class="instagramImages">
+                        <img src="img/i6.jpg" class="instagramImages">
+                        <img src="img/i7.jpg" class="instagramImages">
+                        <img src="img/i8.jpg" class="instagramImages">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col6">
+
+                    </div>
+                    <div class="col-3">
+
                     </div>
                 </div>
             </div>

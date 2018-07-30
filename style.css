@@ -67,7 +67,7 @@
     font-weight: bold;
     cursor: pointer;
     border: none;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
 
 }
 
@@ -134,6 +134,7 @@
     font-weight: bold;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, .1);
+    transition: all 0.4s ease;
     
 }
 
@@ -210,6 +211,7 @@
     font-weight: bold;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 1);
+    transition: all 0.4s ease;
 }
 
 .solutionButton:hover {
@@ -272,6 +274,21 @@
     opacity: .3;
 }
 
+#donutBackground {
+    background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%);
+    width: 300px;
+    height: 300px;
+    border-radius: 1000px;
+    padding: 10px;
+}
+
+.donut1 {
+    background: black;
+    width: 300px;
+    height: 300px;
+    border-radius: 1000px;
+}
+
 .donut {
     border: 10px solid;
     border-image: url(img/about-bg.png) 30 stretch;
@@ -328,13 +345,63 @@
     opacity: .6;
 }
 
+#firstMember {
+    background-image: url(img/t1.jpg);
+    background-size: auto;
+    width: 263px;
+    height: 300px;
+    text-align: center;
+}
+
+#secondMember {
+    background-image: url(img/t2.jpg);
+    background-size: auto;
+    width: 263px;
+    height: 300px;
+    text-align: center;
+}
+
+#thirdMember {
+    background-image: url(img/t3.jpg);
+    background-size: auto;
+    width: 263px;
+    height: 300px;
+    text-align: center;
+}
+
+#forthMember {
+    background-image: url(img/t4.jpg);
+    background-size: auto;
+    width: 260px;
+    height: 300px;
+    text-align: center;
+}
+
+.memberIcons {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.members:hover {
+    opacity: .5;
+    background-color: #8e99e8;
+    transition: all ease 0.4s;
+}
+
+.fa {
+    margin-top: 140px;
+    color: #ffffff;
+    display: none;
+}
+
 #opinions {
     background-image: url(img/testimonial-bg.jpg);
     background-position: center;
     height: 430px;
 }
 
-.opinionsImage {
+.opinionImage {
+    background-image: url(img/about-bg.png);
     height: 100%;
     width: 100%;
     opacity: .6;
@@ -343,4 +410,126 @@
 .singleOpinion {
     background-color: white;
     text-align: center;
+}
+
+#opinions {
+    height: 420px;
+}
+
+#opinionColor {
+    height: 100%;
+    width: 100%;
+    background-image: url(img/about-bg.png);
+    background-color: #908CED;
+}
+
+#blog {
+    height: 810px;
+}
+
+.blogRow2 {
+    margin-top: 70px;
+}
+
+#blogTitle {
+    text-align: center;
+    margin-top: 110px;
+}
+
+#blogText {
+    text-align: center;
+    opacity: .5;
+}
+
+.blogImages {
+    margin-bottom: 20px;
+}
+
+.blogDates {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 5px 27px;
+}
+
+.blogTitle2 {
+    margin-top: 20px;
+}
+
+.blogLink:link, .blogLink:active, .blogLink:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.blogLink:hover h5 {
+    text-decoration: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #908CED, #B272E8);
+}
+
+.blogText2 {
+    opacity: .5;
+}
+
+.blogPosts {
+    padding-bottom: 60px;
+}
+
+.blogIcons {
+    font-size: 15px;
+    text-align: center;
+}
+
+#blogIconLeft {
+    float: left;
+}
+
+#blogIconRight {
+    float: right;
+}
+
+#footer {
+    background-color: #222222;
+    height: 510px;
+}
+
+#instagram {
+    width: 120%;
+}
+
+#instagramTitle {
+    color: #ffffff;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.instagramImages {
+    margin: 2px;
+    vertical-align: 0;
+}
+
+#newsletter {
+    color: #ffffff;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#newsletterText {
+    color: #ffffff;
+}
+
+#newsletterButton {
+    background: linear-gradient(to right, #908CED, #B272E8);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 9px 30px;
+    cursor: pointer;
+}
+
+#newsletterArrow {
+    font-size: 15px;
+    padding-left: 15px;
 }
