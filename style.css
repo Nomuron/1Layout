@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .navContainer {
     margin-left: 0%;
     padding-left: 0%;
@@ -68,7 +72,6 @@
     cursor: pointer;
     border: none;
     transition: all 0.4s ease;
-
 }
 
 #hireUsButton:hover {
@@ -345,8 +348,16 @@
     opacity: .6;
 }
 
+.extraBackground {
+    width: 263px;
+    height: 300px;
+    background-color: #8490ff;
+    position: relative;
+    bottom: 300px;
+    opacity: 0;
+}
+
 #firstMember {
-    background-image: url(img/t1.jpg);
     background-size: auto;
     width: 263px;
     height: 300px;
@@ -354,7 +365,6 @@
 }
 
 #secondMember {
-    background-image: url(img/t2.jpg);
     background-size: auto;
     width: 263px;
     height: 300px;
@@ -362,7 +372,6 @@
 }
 
 #thirdMember {
-    background-image: url(img/t3.jpg);
     background-size: auto;
     width: 263px;
     height: 300px;
@@ -370,11 +379,14 @@
 }
 
 #forthMember {
-    background-image: url(img/t4.jpg);
     background-size: auto;
     width: 260px;
     height: 300px;
     text-align: center;
+}
+
+.members {
+    cursor: pointer;
 }
 
 .memberIcons {
@@ -382,45 +394,50 @@
     margin-right: 10px;
 }
 
-.members:hover {
-    opacity: .5;
-    background-color: #8e99e8;
-    transition: all ease 0.4s;
+.members:hover .extraBackground {
+    opacity: .6;
+    transition: all ease 0.5s;
 }
 
 .fa {
     margin-top: 140px;
     color: #ffffff;
-    display: none;
+    position: relative;
+    bottom: 600px
 }
 
 #opinions {
     background-image: url(img/testimonial-bg.jpg);
-    background-position: center;
     height: 430px;
+    opacity: 1;
 }
 
-.opinionImage {
-    background-image: url(img/about-bg.png);
-    height: 100%;
-    width: 100%;
+.bggr {
+    background: linear-gradient(to right, #908CED, #B272E8);
+    height: 430px;
     opacity: .6;
 }
 
+.bggr .container {
+    opacity: 1;
+}
+
 .singleOpinion {
+    margin-top: 150px;
     background-color: white;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-#opinions {
-    height: 420px;
+.singleOpinionImage {
+    height: 35px;
+    width: 35px;
 }
 
-#opinionColor {
-    height: 100%;
-    width: 100%;
-    background-image: url(img/about-bg.png);
-    background-color: #908CED;
+.singleOpinionText {
+    float: right;
+    text-align: left;
 }
 
 #blog {
@@ -507,6 +524,7 @@
 .instagramImages {
     margin: 2px;
     vertical-align: 0;
+    width: calc(25% - 8px);
 }
 
 #newsletter {
@@ -527,9 +545,61 @@
     border: none;
     padding: 9px 30px;
     cursor: pointer;
+    float: right;
 }
 
 #newsletterArrow {
     font-size: 15px;
     padding-left: 15px;
+}
+
+#newsletterInput {
+    height: 40px;
+    width: 60%;
+    border-radius: 30px;
+    border: none;
+}
+
+#productsTitle {
+    color: #ffffff;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.productsList {
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all ease .3s;
+}
+
+.productsList:hover {
+    color: #8490ff;
+}
+
+#copyrightsText {
+    color: #ffffff;
+    margin-left: 15px;
+    margin-top: 70px;
+    font-size: 15px;
+}
+
+#copyrightsHeart {
+    color: #8490ff;
+}
+
+#corporationName {
+    color: #8490ff;
+}
+
+#footerIconsDiv {
+    margin-left: 80px;
+}
+
+.footerIcons {
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #111111;
+    margin-top: 70px;
+    padding: 14px 14px;
 }
