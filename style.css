@@ -49,9 +49,10 @@ a:hover {
     font-size: 480%;
     color: white;
     position: absolute;
-    margin-top: 300px;
+    margin-top: 370px;
     margin-left: 51%;
     filter: default;
+    line-height: 85px;
 }
 
 .hireSpan {
@@ -413,31 +414,52 @@ a:hover {
 }
 
 .bggr {
-    background: linear-gradient(to right, #908CED, #B272E8);
+    background: linear-gradient(to right, rgba(144, 140, 237, .6), rgba(178, 114, 232, .6));
     height: 430px;
-    opacity: .6;
 }
 
-.bggr .container {
-    opacity: 1;
-}
-
-.singleOpinion {
-    margin-top: 150px;
-    background-color: white;
-    text-align: center;
+#frame {
+    background-color: #ffffff;
+    height: 100%;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
+#frame1 {
+    background-color: #ffffff;
+    height: 100%;
+    padding: 10px 5px;
+}
+
+.singleOpinion {
+    margin-top: 120px;
+    /* background-color: white; */
+    text-align: center;
+    height: 185px;
+}
+
 .singleOpinionImage {
-    height: 35px;
-    width: 35px;
+    margin-top: 25px;
+    height: 40px;
+    width: 40px;
 }
 
 .singleOpinionText {
+    margin-top: 20px;
     float: right;
     text-align: left;
+}
+
+.opinionAndFunction {
+    opacity: .6;
+}
+
+.opinionName {
+    font-weight: bold;
 }
 
 #blog {
@@ -602,4 +624,9 @@ a:hover {
     background-color: #111111;
     margin-top: 70px;
     padding: 14px 14px;
+}
+
+.footerIcons:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #908CED, #B272E8);
 }
