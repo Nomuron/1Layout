@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 a:hover {
     text-decoration: none;
 }
@@ -35,39 +31,47 @@ a:hover {
     margin-right: 14px;
 }
 
-#hireUs {
+#hireUsSection {
     background-image: url(img/header-bg.jpg);
     height: 1030px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(60%);
+}
+
+#hireUs {
+    height: 1030px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: rgba(0, 0, 0, .4);
 }
 
 #hireUsText {
+    margin-top: 370px;
     font-size: 480%;
     color: white;
-    position: absolute;
-    margin-top: 370px;
-    margin-left: 51%;
-    filter: default;
     line-height: 85px;
 }
 
-.hireSpan {
+.hireSpanFat {
     font-weight: bold;
+}
+
+.hireSpanFit {
+    font-weight: 100;
 }
 
 #hireUsButton {
     position: absolute;
-    margin-top: 660px;
-    margin-left: 51%;
+    margin-top: 40px;
     background: linear-gradient(to right, #908CED, #B272E8);
     border-radius: 20px;
     color: white;
     text-align: center;
-    padding: 8px 30px;
+    padding: 8px 35px;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
@@ -76,17 +80,8 @@ a:hover {
 }
 
 #hireUsButton:hover {
-    position: absolute;
-    margin-top: 660px;
-    margin-left: 51%;
     background: transparent;
     border-radius: 20px;
-    color: white;
-    text-align: center;
-    padding: 8px 30px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
     border: 2px solid white;
 }
 
@@ -144,13 +139,7 @@ a:hover {
 
 .serviceButton:hover {
     background: linear-gradient(to right, #908CED, #B272E8);
-    border-radius: 20px;
     color: white;
-    text-align: center;
-    padding: 8px 30px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
     border: none;
     
 }
@@ -164,25 +153,7 @@ a:hover {
     padding-top: 15px;
 }
 
-#servicesFirst:hover .lnr-rocket {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #908CED, #B272E8);
-}
-
-#servicesSecond:hover .lnr-magic-wand {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #908CED, #B272E8);
-}
-
-#servicesThird:hover .lnr-gift {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #908CED, #B272E8);
-}
-
-#servicesForth:hover .lnr-phone {
+.services:hover .serviceIcons {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to right, #908CED, #B272E8);
@@ -220,14 +191,7 @@ a:hover {
 
 .solutionButton:hover {
     background: #ffffff;
-    border-radius: 20px;
     color: #000000;
-    text-align: center;
-    margin-top: 15px;
-    padding: 4px 30px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .girlPicture {
@@ -278,39 +242,49 @@ a:hover {
     opacity: .3;
 }
 
-#donutBackground {
-    background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%);
-    width: 300px;
-    height: 300px;
-    border-radius: 1000px;
-    padding: 10px;
-}
-
-.donut1 {
-    background: black;
-    width: 300px;
-    height: 300px;
+#donutsBackground {
+    background: -webkit-linear-gradient(left, rgb(118, 114, 231) 0%, rgb(167, 84, 235) 100%);
+    width: 135px;
+    height: 135px;
     border-radius: 1000px;
 }
 
 .donut {
-    border: 10px solid;
-    border-image: url(img/about-bg.png) 30 stretch;
-    border-radius: 50%;
-    height: 140px;
-    width: 140px;
+    background: black;
+    width: 115px;
+    height: 115px;
+    border-radius: 1000px;
     text-align: center;
     margin-top: 125px;
-    padding-top: 45px;
     color: white;
     font-size: 20px;
+    padding-top: 45px;
+    position: relative;
+    right: -10px;
+    top: 10px;
 }
 
 .donutText {
     text-align: center;
     color: white;
-    margin-bottom: 40px;
+    margin-top: 20px;
     margin-right: 15px;
+}
+
+#figure1 {
+    width: 80px;
+    height: 70px;
+    background-color: #000000;
+    position: relative;
+    bottom: 135px;
+}
+
+#figure2 {
+    width: 40px;
+    height: 70px;
+    background-color: #000000;
+    position: relative;
+    bottom: 180px;
 }
 
 #team {
@@ -358,36 +332,12 @@ a:hover {
     opacity: 0;
 }
 
-#firstMember {
-    background-size: auto;
-    width: 263px;
-    height: 300px;
-    text-align: center;
-}
-
-#secondMember {
-    background-size: auto;
-    width: 263px;
-    height: 300px;
-    text-align: center;
-}
-
-#thirdMember {
-    background-size: auto;
-    width: 263px;
-    height: 300px;
-    text-align: center;
-}
-
-#forthMember {
+.members {
+    cursor: pointer;
     background-size: auto;
     width: 260px;
     height: 300px;
     text-align: center;
-}
-
-.members {
-    cursor: pointer;
 }
 
 .memberIcons {
@@ -413,31 +363,18 @@ a:hover {
     opacity: 1;
 }
 
-.bggr {
+.opinionsBackground {
     background: linear-gradient(to right, rgba(144, 140, 237, .6), rgba(178, 114, 232, .6));
     height: 430px;
 }
 
-#frame {
+.dupa {
+    margin: 0px 10px;
     background-color: #ffffff;
-    height: 100%;
-    margin-bottom: 0px;
-    margin-left: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#frame1 {
-    background-color: #ffffff;
-    height: 100%;
-    padding: 10px 5px;
 }
 
 .singleOpinion {
     margin-top: 120px;
-    /* background-color: white; */
     text-align: center;
     height: 185px;
 }
@@ -615,7 +552,7 @@ a:hover {
 }
 
 #footerIconsDiv {
-    margin-left: 80px;
+    margin-left: 75px;
 }
 
 .footerIcons {

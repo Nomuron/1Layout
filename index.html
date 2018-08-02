@@ -53,13 +53,23 @@
                 </div>
             </div>
         </section>
-        <section id="hireUs">
-                <div id="hireUsText">We Provide 
-                    <br>
-                    <span class="hireSpan">Solutions</span> That 
-                    <br>
-                    Bring <span class="hireSpan">Joy</span></div>
-                <button id="hireUsButton">HIRE US NOW!</button>
+        <section id="hireUsSection">
+            <div id="hireUs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 offset-6" id="hireUsText">
+                            <span class="hireSpanFit">We Provide </span>
+                            <span class="hireSpanFat">Solutions </span>
+                            <span class="hireSpanFit">That Brings </span>
+                            <span class="hireSpanFat">Joy</span>
+                            
+                        </div>
+                        <div class="col-6 offset-6">
+                            <button id="hireUsButton">HIRE US NOW!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>                
         </section>
         <section id="categories">
             <div class="container categoriesContainer">
@@ -75,25 +85,25 @@
             <div class="container serviceContainer">
                 <div class="row serviceList">
                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 services" id="servicesFirst">
-                        <span class="lnr lnr-rocket"></span>
+                        <span class="lnr lnr-rocket serviceIcons"></span>
                         <h6 class="serviceTitle" id="firstService">Easy Flight Search</h6>
                         <p class="servicesText">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.</p>
                         <button class="serviceButton">VIEW DETAILS</button>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 services" id="servicesSecond">
-                        <span class="lnr lnr-magic-wand"></span>
+                        <span class="lnr lnr-magic-wand serviceIcons"></span>
                         <h6 class="serviceTitle" id="secondService">Get Hotel Offers</h6>
                         <p class="servicesText">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.</p>
                         <button class="serviceButton">VIEW DETAILS</button>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 services" id="servicesThird">
-                        <span class="lnr lnr-gift"></span>
+                        <span class="lnr lnr-gift serviceIcons"></span>
                         <h6 class="serviceTitle" id="thirdService">Holiday Packages</h6>
                         <p class="servicesText">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.</p>
                         <button class="serviceButton">VIEW DETAILS</button>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 services" id="servicesForth">
-                        <span class="lnr lnr-phone"></span>
+                        <span class="lnr lnr-phone serviceIcons"></span>
                         <h6 class="serviceTitle" id="forthService">Dedicated Support</h6>
                         <p class="servicesText">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.</p>
                         <button class="serviceButton">VIEW DETAILS</button>
@@ -158,24 +168,29 @@
                     </div>
                     <div class="col-2">
                         <div id="donutsBackground">
-                            <div class="donut1" id="firstDonut">
+                            <div class="donut" id="firstDonut">
                                 75%
                             </div>
+                            <div id="figure1"></div>
+                            <div id="figure2"></div>
                         </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="donut" id="secondDonut">95%</div>
-                    </div>
-                    <div class="col-2">
-                        <div class="donut" id="thirdDonut">85%</div>
-                    </div>
-                    <div class="col-2 offset-6">
                         <h5 class="donutText">Wireframing</h5>
                     </div>
                     <div class="col-2">
+                        <div id="donutsBackground">
+                            <div class="donut" id="secondDonut">
+                                95%
+                            </div>
+                            <div id="figure3"></div>
+                        </div>
                         <h5 class="donutText">User Research</h5>
                     </div>
                     <div class="col-2">
+                        <div id="donutsBackground">
+                            <div class="donut" id="thirdDonut">
+                                85%
+                            </div>
+                        </div>
                         <h5 class="donutText">User Experience</h5>
                     </div>
                 </div>
@@ -237,20 +252,18 @@
             </div>
         </section>
         <section id="opinions">
-            <div class="bggr">
+            <div class="opinionsBackground">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="row">
                                 <div class="col-6 singleOpinion">
-                                    <div class="row">
-                                        <div class="col-2" id="frame1">
-                                            <div>
+                                    <div class="dupa">
+                                        <div class="row">
+                                            <div class="col-2">
                                                 <img src="img/user1.png" class="singleOpinionImage">
                                             </div>
-                                        </div>
-                                        <div class="col-10 singleOpinionText">
-                                            <div id="frame">
+                                            <div class="col-10 singleOpinionText">
                                                 <p class="opinionAndFunction">
                                                     Accessories Here you can find the best computer accessory 
                                                     <br>
@@ -265,20 +278,22 @@
                                     </div>
                                 </div>
                                 <div class="col-6 singleOpinion">
-                                    <div class="row">
-                                        <div class="col-2">
-                                            <img src="img/user2.png" class="singleOpinionImage">
-                                        </div>
-                                        <div class="col-10 singleOpinionText">
-                                            <p class="opinionAndFunction">
-                                                Accessories Here you can find the best computer accessory 
-                                                <br>
-                                                for your laptop, monitor, printer, scanner, speaker, projector, 
-                                                <br>
-                                                hardware.
-                                            </p>
-                                            <h5 class="opinionName">Mark Alviro Wiens</h5>
-                                            <p class="opinionAndFunction">CEO at Google</p>
+                                    <div class="dupa">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img src="img/user2.png" class="singleOpinionImage">
+                                            </div>
+                                            <div class="col-10 singleOpinionText">
+                                                <p class="opinionAndFunction">
+                                                    Accessories Here you can find the best computer accessory 
+                                                    <br>
+                                                    for your laptop, monitor, printer, scanner, speaker, projector, 
+                                                    <br>
+                                                    hardware.
+                                                </p>
+                                                <h5 class="opinionName">Mark Alviro Wiens</h5>
+                                                <p class="opinionAndFunction">CEO at Google</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -365,7 +380,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col6">
+                    <div class="col-6">
                         <p id="copyrightsText">Copyright ©2018 All rights reserved | This template is made with <span id="copyrightsHeart" class="lnr lnr-heart blogIcons"></span> by<a href="#" class="copyrightsLink"><span id="corporationName"> Colorlib</span></a></p>
                     </div>
                     <div class="col-3 offset-3">
