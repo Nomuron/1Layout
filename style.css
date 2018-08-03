@@ -33,20 +33,18 @@ a:hover {
 
 #hireUsSection {
     background-image: url(img/header-bg.jpg);
-    height: 1030px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 #hireUs {
+    background: rgba(0, 0, 0, .4);
+}
+
+.parallax {
     height: 1030px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: rgba(0, 0, 0, .4);
 }
 
 #hireUsText {
@@ -163,7 +161,6 @@ a:hover {
     background-image: linear-gradient(to right, #908CED, #B272E8);
     height: 510px;
     width: 100%;
-    z-index: 999;
 }
 
 #solutionTitle {
@@ -274,17 +271,18 @@ a:hover {
 #figure1 {
     width: 80px;
     height: 70px;
-    background-color: #000000;
-    position: relative;
     bottom: 135px;
 }
 
 #figure2 {
     width: 40px;
     height: 70px;
+    bottom: 180px;
+}
+
+.figureRules {
     background-color: #000000;
     position: relative;
-    bottom: 180px;
 }
 
 #team {
@@ -369,7 +367,7 @@ a:hover {
 }
 
 .dupa {
-    margin: 0px 10px;
+    margin: 0px -5px;
     background-color: #ffffff;
 }
 
