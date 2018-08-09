@@ -10,9 +10,8 @@ a:hover {
 .navbar {
     height: 56px;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 999;
-    display: flex;
 }
 
 #logo {
@@ -33,6 +32,7 @@ a:hover {
 
 #hireUsSection {
     background-image: url(img/header-bg.jpg);
+    text-align: center;
 }
 
 #hireUs {
@@ -77,6 +77,12 @@ a:hover {
     transition: all 0.4s ease;
 }
 
+@media screen and (max-width: 992px) {
+    #hireUsButton {
+        position: static;
+    }
+}
+
 #hireUsButton:hover {
     background: transparent;
     border-radius: 20px;
@@ -84,7 +90,7 @@ a:hover {
 }
 
 #categories {
-    height: 170px;
+    height: 10.625em;
 }
 .categoriesContainer {
     margin-top: 55px;
@@ -146,6 +152,19 @@ a:hover {
     width: 150px;
 }
 
+@media screen and (max-width: 768px) {
+    .services {
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .services {
+        margin-top: 40px;
+    }
+}
+
 .servicesText {
     opacity: .5;
     padding-top: 15px;
@@ -198,8 +217,14 @@ a:hover {
     bottom: 73px;
 }
 
+#firstGirl {
+    width: 800px;
+    height: 100%;
+}
+
 .projectContainer {
     height: 1085px;
+    text-align: center;
 }
 
 .projectTitle {
@@ -279,6 +304,12 @@ a:hover {
     background-color: #f9f9ff;
 }
 
+@media screen and (max-width: 768px) {
+    #team {
+        height: 3300px;
+    }
+}
+
 #teamTitle {
     text-align: center;
     margin-top: 120px;
@@ -311,12 +342,16 @@ a:hover {
 }
 
 .extraBackground {
-    width: 263px;
     height: 300px;
     background-color: #8490ff;
-    position: relative;
-    bottom: 300px;
     opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .extraBackground {
+        height: 99%;
+        width: 100%;
+    }
 }
 
 .members {
@@ -325,11 +360,13 @@ a:hover {
     width: 260px;
     height: 300px;
     text-align: center;
-}
-
-.memberIcons {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .members {
+    }
 }
 
 .members:hover .extraBackground {
@@ -337,11 +374,42 @@ a:hover {
     transition: all ease 0.5s;
 }
 
+.singleMembers {
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
+    height: 100%;
+}
+
+#firstMember {
+    background-image: url(img/t1.jpg);
+}
+
+#secondMember {
+    background-image: url(img/t2.jpg);
+}
+
+#thirdMember {
+    background-image: url(img/t3.jpg);
+}
+
+#forthMember {
+    background-image: url(img/t4.jpg);
+}
+
 .fa {
-    margin-top: 140px;
+    margin-top: 450px;
     color: #ffffff;
     position: relative;
     bottom: 600px
+}
+
+@media screen and (max-width: 768px) {
+    .fa {
+        margin: 0px;
+        position: relative;
+        bottom: 150px
+    }
 }
 
 #opinions {
@@ -394,6 +462,18 @@ a:hover {
     margin-top: 70px;
 }
 
+@media screen and (max-width: 992px) {
+    #blog {
+        height: 1400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #blog {
+        height: 2000px;
+    }
+}
+
 #blogTitle {
     text-align: center;
     margin-top: 110px;
@@ -406,6 +486,10 @@ a:hover {
 
 .blogImages {
     margin-bottom: 20px;
+}
+
+.blogImages:hover {
+    cursor: pointer;
 }
 
 .blogDates {
@@ -440,6 +524,12 @@ a:hover {
     padding-bottom: 60px;
 }
 
+@media screen and (max-width: 992px) {
+    .blogPosts {
+        padding-bottom: 10px;
+    }
+}
+
 .blogIcons {
     font-size: 15px;
     text-align: center;
@@ -456,6 +546,12 @@ a:hover {
 #footer {
     background-color: #222222;
     height: 510px;
+}
+
+@media screen and (max-width: 992px) {
+    #footer {
+        height: 1150px;
+    }
 }
 
 #instagram {
