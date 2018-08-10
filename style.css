@@ -42,16 +42,47 @@ a:hover {
 .parallax {
     height: 1030px;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+@media screen and (max-width: 768px) {
+    .parallax {
+        height: 740px;
+    }
+}
+
 #hireUsText {
     margin-top: 370px;
-    font-size: 480%;
+    font-size: 70px;
     color: white;
-    line-height: 85px;
+    line-height: 90px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+    #hireUsText {
+        margin-top: 420px;
+        text-align: left;
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #hireUsText {
+        margin-top: 440px;
+        text-align: center;
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #hireUsText {
+        margin-top: 300px;
+    }
 }
 
 .hireSpanFat {
@@ -63,12 +94,12 @@ a:hover {
 }
 
 #hireUsButton {
-    position: absolute;
-    margin-top: 40px;
+    margin-top: 25px;
+    margin-right: 365px;
     background: linear-gradient(to right, #908CED, #B272E8);
     border-radius: 20px;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 8px 35px;
     font-size: 14px;
     font-weight: bold;
@@ -77,9 +108,17 @@ a:hover {
     transition: all 0.4s ease;
 }
 
+@media screen and (max-width: 1200px) {
+    #hireUsButton {
+        font-size: 14px;
+        margin-top: 30px;
+        margin-right: 280px;
+    }
+}
+
 @media screen and (max-width: 992px) {
     #hireUsButton {
-        position: static;
+        margin: 40px 0px;
     }
 }
 
@@ -90,8 +129,15 @@ a:hover {
 }
 
 #categories {
-    height: 10.625em;
+    height: 170px;
 }
+
+@media screen and (max-width: 992px) {
+    #categories {
+        height: 220px;
+    }
+}
+
 .categoriesContainer {
     margin-top: 55px;
 }
@@ -156,6 +202,7 @@ a:hover {
     .services {
         margin-top: 50px;
         text-align: center;
+        width: auto;
     }
 }
 
@@ -180,12 +227,23 @@ a:hover {
 #solution {
     background-image: linear-gradient(to right, #908CED, #B272E8);
     height: 510px;
-    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    #solution {
+        text-align: center;
+    }
 }
 
 #solutionTitle {
     color: white;
     margin-top: 130px;
+}
+
+@media screen and (max-width: 768px) {
+    #solutionTitle {
+        margin-top: 30px;
+    }
 }
 
 #solutionText {
@@ -253,6 +311,12 @@ a:hover {
     height: 428px;
 }
 
+@media screen and (max-width: 768px) {
+    .field {
+        display: none;
+    }
+}
+
 .fieldTitle {
     color: white;
     margin-top: 135px;
@@ -306,7 +370,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
     #team {
-        height: 3300px;
+        height: 3500px;
     }
 }
 
@@ -336,6 +400,12 @@ a:hover {
     margin-top: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+    .teamNames {
+        margin: 0px;
+    }
+}
+
 .teamPositions {
     text-align: center;
     opacity: .6;
@@ -347,16 +417,29 @@ a:hover {
     opacity: 0;
 }
 
+@media screen and (max-width: 1200px) {
+    .extraBackground {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .extraBackground {
+        height: 100%;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .extraBackground {
-        height: 99%;
+        height: 100%;
         width: 100%;
     }
 }
 
 .members {
     cursor: pointer;
-    background-size: auto;
     width: 260px;
     height: 300px;
     text-align: center;
@@ -364,8 +447,16 @@ a:hover {
     margin-right: 10px;
 }
 
+@media screen and (max-width: 1200px) {
+    .members {
+        margin: 0px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .members {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -377,8 +468,29 @@ a:hover {
 .singleMembers {
     background-repeat: no-repeat;
     width: 100%;
-    background-size: contain;
-    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media screen and (max-width: 1200px) {
+    .singleMembers {
+        height: 85%;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .singleMembers {
+        height: 65%;
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .singleMembers {
+        height: 80vh;
+        width: 80vw;
+    }
 }
 
 #firstMember {
@@ -404,11 +516,21 @@ a:hover {
     bottom: 600px
 }
 
+@media screen and (max-width: 992px) {
+    .fa {
+        margin: 0px;
+        position: relative;
+        bottom: 120px;
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .fa {
         margin: 0px;
         position: relative;
-        bottom: 150px
+        bottom: 400px;
+        font-size: 30px;
     }
 }
 
@@ -416,6 +538,7 @@ a:hover {
     background-image: url(img/testimonial-bg.jpg);
     height: 430px;
     opacity: 1;
+    background-position: center center;
 }
 
 .opinionsBackground {
@@ -440,6 +563,14 @@ a:hover {
     width: 40px;
 }
 
+@media screen and (max-width: 992px) {
+    .singleOpinionImage {
+        height: 20px;
+        width: 20px;
+        margin-left: 20px;
+    }
+}
+
 .singleOpinionText {
     margin-top: 20px;
     float: right;
@@ -454,17 +585,19 @@ a:hover {
     font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+    #disappearingOpinion {
+        display: none;
+    }
+}
+
 #blog {
     height: 810px;
 }
 
-.blogRow2 {
-    margin-top: 70px;
-}
-
 @media screen and (max-width: 992px) {
     #blog {
-        height: 1400px;
+        height: 1300px;
     }
 }
 
@@ -472,6 +605,10 @@ a:hover {
     #blog {
         height: 2000px;
     }
+}
+
+.blogRow2 {
+    margin-top: 70px;
 }
 
 #blogTitle {
@@ -488,6 +625,27 @@ a:hover {
     margin-bottom: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+    .blogImages {
+        width: 100%;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .blogImages {
+        width: 80%;
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blogImages {
+        width: 53%;
+        height: 43%;
+    }
+}
+
 .blogImages:hover {
     cursor: pointer;
 }
@@ -495,8 +653,28 @@ a:hover {
 .blogDates {
     background-color: #000000;
     color: #ffffff;
-    font-size: 12px;
-    padding: 5px 27px;
+    font-size: 14px;
+    padding: 2px 20px;
+    width: 45%;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 1200px) {
+    .blogDates {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .blogDates {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blogDates {
+        width: 23%;
+    }
 }
 
 .blogTitle2 {
@@ -550,12 +728,8 @@ a:hover {
 
 @media screen and (max-width: 992px) {
     #footer {
-        height: 1150px;
+        height: 1300px;
     }
-}
-
-#instagram {
-    width: 120%;
 }
 
 #instagramTitle {
@@ -568,6 +742,13 @@ a:hover {
     margin: 2px;
     vertical-align: 0;
     width: calc(25% - 8px);
+}
+
+@media screen and (max-width: 992px) {
+    .instagramImages {
+        margin: 2px 40px;
+        width: 60px;
+    }
 }
 
 #newsletter {
@@ -591,6 +772,12 @@ a:hover {
     float: right;
 }
 
+@media screen and (max-width: 992px) {
+    #newsletterButton {
+        float: left;
+    }
+}
+
 #newsletterArrow {
     font-size: 15px;
     padding-left: 15px;
@@ -601,6 +788,12 @@ a:hover {
     width: 60%;
     border-radius: 30px;
     border: none;
+}
+
+@media screen and (max-width: 992px) {
+    #newsletterInput {
+        width: 100%;
+    }
 }
 
 #productsTitle {
@@ -627,6 +820,12 @@ a:hover {
     font-size: 15px;
 }
 
+@media screen and (max-width: 992px) {
+    #copyrightsText {
+        margin-left: 0px;
+    }
+}
+
 #copyrightsHeart {
     color: #8490ff;
 }
@@ -639,12 +838,30 @@ a:hover {
     margin-left: 75px;
 }
 
+@media screen and (max-width: 1200px) {
+    #footerIconsDiv {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #footerIconsDiv {
+        margin-left: auto;
+    }
+}
+
 .footerIcons {
     font-size: 13px;
     color: #ffffff;
     background-color: #111111;
     margin-top: 70px;
     padding: 14px 14px;
+}
+
+@media screen and (max-width: 992px) {
+    .footerIcons {
+        margin-top: auto;
+    }
 }
 
 .footerIcons:hover {
